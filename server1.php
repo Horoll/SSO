@@ -16,16 +16,10 @@ if (isset($_COOKIE['token1']) || isset($_GET['token']) )
 else
 	//如果没有登录，则跳转sso服务
 	header("Location:http://localhost/sso/sso.php?from=server1"); 
-
 ?>
 <html>
-
 <head>
 <title>server1</title>
 </head>
-
-<form action="sso.php" method="get">
-	hello！<?=$username?>
-</form>
-
+<p>hello！<?=$username?></p>
 </html>
